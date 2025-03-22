@@ -1,0 +1,2 @@
+I would characterize their audio aura by their genres for example, death metal genre would have negative aura meanwhile Lo-Fi genre having more positive aura because emotional qualities of most songs cannot be perceived by just raw data from tables.
+Instead, using genre can capture more nuanced cultural or emotional contexts (e.g. metal might have different "feel" than electronic music, even if their energies are similar).
