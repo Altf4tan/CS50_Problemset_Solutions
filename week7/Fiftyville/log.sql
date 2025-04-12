@@ -90,10 +90,4 @@ SELECT * FROM passengers WHERE flight_id = 36;
 --with him having the seat of 4A
 --There is no evidence of Diana taking this flight as her passport number was missing on the list
 --proving that our main suspect is Bruce himself along with his accomplice Robin
---perpetuated the duck thievery
---Alas, we still have to prove Robin is deeply involved with the case itself
---phone call to our main suspect on the day of crime is not enough evidence for robin
---to be accused of this crime
-SELECT * FROM people WHERE name = 'Robin';
---We have found out that Robin's license plate is 4V16VO0
---His id is 864400, phone number is already known from the queries above
+--perpetuated the duck thievery.
