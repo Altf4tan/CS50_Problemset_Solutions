@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet">
+        <link href="custom.css" rel="stylesheet">
+        <title>CS50 Problem Set Solutions</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Altan Basoglu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">CS50 Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="darkModeToggle" class="btn btn-outline-light ms-2">Dark Mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+         <!-- Projects Section -->
+         <main class="container mt-5 pt-5">
+            <h1 class="text-center mb-5">My CS50 Journey</h1>
+            <!-- Problem Sets Grid -->
+             <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- PSET 1 -->
+                 <div class="col d-flex">
+                    <div class="card d-flex flex-column w-100">
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title">Mario Pyramid</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Problem Set 1</h6>
+                            <p class="card-text">
+                                Built a pyramid generator using nested loops in C.
+                                Learned fundamental control structures and pattern printing.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">C</span>
+                                <span class="badge bg-info">Algorithms</span>
+                            </div>
+                            <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week1/Mario/Mario(Less)%20Problem%20Solution.c" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on GitHub
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Readability Analysis</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 2</h6>
+                        <p class="card-text">
+                            Implemented text complexity analysis using the Coleman-Liau index.
+                            Practiced string manipulation and function design.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">C</span>
+                            <span class="badge bg-info">Text Processing</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week2/Readability/readability.c" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on GitHub
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Ranked-Choice Voting System</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 3(Runoff)</h6>
+                        <p class="card-text">
+                            Developed a ranked-choice voting simulation that:
+                            <ul>
+                                <li>Processes voter preferences through multiple elimination rounds</li>
+                                <li>Automatically redistributes votes using the instant-runoff algorithm</li>
+                                <li>Handles edge cases like candidate ties and exact majority scenarios</li>
+                            </ul>
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">C</span>
+                            <span class="badge bg-info">Algorithms</span>
+                            <span class="badge bg-info">Data Structures</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week3/runoff.c" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on GitHub
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Creating Image Filters</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 4(Filter)</h6>
+                        <p class="card-text">
+                            Developed a BMP image processor implementing:
+                            <ul>
+                                <li>Grayscale conversion using luminance preservation</li>
+                                <li>Sepia tone filtering with color matrix transformations</li>
+                                <li>Image reflection through array mirroring algorithms</li>
+                                <li>Box blur effect using kernel-based convolution</li>
+                            </ul>
+                            Worked directly with bitmap headers and RGB pixel arrays.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">C</span>
+                            <span class="badge bg-info">Image Processing</span>
+                            <span class="badge bg-info">Low-Level Optimization</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/tree/main/week4/Filter-less/helpers.c" class="btn btn-dark" target="_blank">
+                               <div class="card-footer">
+                                    View on GitHub
+                               </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Genealogy Traversal System</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 5(Inheritance)</h6>
+                        <p class="card-text">
+                            Developed a lineage tracking system that:
+                            <ul>
+                                <li>Traverses family trees using recursive algorithms</li>
+                                <li>Calculates genetic inheritance probabilities</li>
+                                <li>Handles complex kinship relationships through pointer-based structures</li>
+                            </ul>
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">C</span>
+                            <span class="badge bg-info">Recursion</span>
+                            <span class="badge bg-info">Data Modeling</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week5/inheritance.c" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on GitHub
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Lexical Hash System</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 5(Speller)</h6>
+                        <p class="card-text">
+                            Built a high-performance spell checker featuring:
+                            <ul>
+                                <li>Custom hash function with O(1) average lookup</li>
+                                <li>Dynamic memory management for 140k+ words</li>
+                                <li>Linked list collision resolution</li>
+                                <li>Benchmarked at 98% faster than linear search</li>
+                            </ul>
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">C</span>
+                            <span class="badge bg-info">Data Structures</span>
+                            <span class="badge bg-info">Optimization</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week5/speller_project/dictionary.c" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on GitHub
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Forensic DNA Analysis System</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 6</h6>
+                        <p class="card-text">
+                            Built a DNA profiling system that:
+                            <ul>
+                                <li>Parses multi-GB DNA sequence files</li>
+                                <li>Implements O(n) sequence pattern matching
+                                    <ul class="list-unstyled ms-3">
+                                        <li>✓ Consecutive STR counting</li>
+                                        <li>✓ CSV database querying</li>
+                                        <li>✓ Statistical matching</li>
+                                    </ul>
+                                </li>
+                                <li>Identifies individuals from DNA samples</li>
+                            </ul>
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning">Python</span>
+                            <span class="badge bg-info">Bioinformatics</span>
+                            <span class="badge bg-info">Pattern Recognition</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week6/project_dna/dna.py" class="btn btn-dark" target="_blank">
+                                <div class="card-footer">
+                                    View on Github
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card d-flex flex-column w-100">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Fiftyville Mystery</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Problem Set 7 (SQL Investigation)</h6>
+                        <p class="card-text">
+                            Solved a SQL mystery involving:
+                            <ul>
+                                <li>Complex multi-table joins</li>
+                                <li>Timestamp analysis across 10+ tables</li>
+                                <li>Flight booking pattern recognition</li>
+                                <li>License plate tracking system</li>
+                            </ul>
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-danger">SQL</span>
+                            <span class="badge bg-info">Database Design</span>
+                            <span class="badge bg-info">Forensic Analysis</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                        <a href="https://github.com/Altf4tan/CS50_Projects/blob/main/week7/Fiftyville/log.sql" class="btn btn-dark" target="_blank">
+                            <div class="card-footer">
+                                    View on Github
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function(){
+            document.body.classList.toggle('dark-mode');
+            // Save user preference
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+        // Check for saved preference
+        if (localStorage.getItem('darkMode') == 'true') {
+            document.body.classList.add('dark-mode');
+        }
+        </script>
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p class="mb-0">
+                    © 2025 Altan Basoglu | CS50 Journey |
+                    <a href="mailto:altan_basoglu@hotmail.com" class="text-white">Contact Me</a>
+                </p>
+            </div>
+         </footer>
+    </body>
+</html>

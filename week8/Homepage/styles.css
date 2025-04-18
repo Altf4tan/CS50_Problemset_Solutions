@@ -1,0 +1,64 @@
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff !important;
+}
+.dark-mode .navbar {
+    background: #2d2d2d !important;
+}
+.dark-mode .card {
+    color: #ffffff !important;
+    background: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+.dark-mode .list-group-item {
+    background: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+}
+.dark-mode .progress {
+    background: #404040;
+}
+.dark-mode .progress-bar {
+  color: #000000 !important;
+}
+.dark-mode .badge {
+    color: #ffffff !important;
+}
+.dark-mode .btn-outline-light {
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+}
+.dark-mode .text-muted {
+    color: #adb5bd !important;
+}
+.dark-mode .bg-light {
+    background-color: #343a40 !important;
+}
+/*About Page Styles*/
+.profile-img {
+    width: 200px;
+    border: 3px solid #2c3e50;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.blockquote {
+    border-left: 4px solid #dee2e6;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+/* Dark Mode Overrides */
+.dark-mode .profile-img {
+    border-color: #ffffff;
+}
+.dark-mode .blockquote {
+    border-left-color: #4a5568;
+}
+.dark-mode .list-unstyled i {
+    color: #63b3ed !important;
+}
+
+.dark-mode .ul-custom li::before {
+    color: #63b3ed;
+}

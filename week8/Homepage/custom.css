@@ -1,0 +1,76 @@
+/* Color palette */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #f0f4f8;
+    --accent-color: #f0823f;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.my-accent {
+    color: var(--accent-color);
+}
+
+.hero-section {
+    background: linear-gradient(#212529, var(--seconday-color));
+    padding: 3rem 1rem;
+    text-align: center;
+}
+/* Smooth hover or focus transitions make the site feel more interactive */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #084298;
+    transform: scale(1.03);
+}
+
+
+.dark-mode, .dark-mode * {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    --primary-color: #212529;
+    --accent-color: #f0823f;
+}
+
+body.dark-mode {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .card {
+    background-color: #444;
+    color: #f8f9fa;
+}
+
+.social-link a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+    transition: all 0.3;
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding:2rem 0;
+}
+
+.contact-links a {
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #084292;
+}

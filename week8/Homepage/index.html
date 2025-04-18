@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- CS50 CSS -->
+        <link href="styles.css" rel="stylesheet">
+        <!-- My custom CSS -->
+        <link href="custom.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Altan Basoglu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">CS50 Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="darkModeToggle" class= "btn btn-outline-light ms-2">Dark Mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <header class="jumbotron jumbotron-fluid bg-light mt-5">
+                <div class="container text-center">
+                    <img src="placeholder_image.png" alt="altan basoglu" class="profile-img rounded-circle mb-4">
+                    <h1 class="display-4">CS50 Student & Aspiring Developer</h1>
+                </div>
+            </header>
+        </div>
+        <!-- Introduction Section -->
+         <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="my-section">
+                        <h2 class="mb-4">Welcome to My Learning Journey</h2>
+                        <p class="lead">
+                            Hi! I'm a passionate computer science student currently completing Harvard's CS50 course.
+                            Through rigorous problem sets and projects, I'm building foundational skills in programming
+                            and computational thinking.
+                        </p>
+                    </div>
+                        <div class="mt-4">
+                            <h5>Current Focus:</h5>
+                            <ul class="list-unstyled">
+                                <li>📚 Week 8: Web Development (HTML/CSS/JavaScript)</li>
+                                <li>💻 Mastering Python and C Programming</li>
+                                <li>🔧 Building problem-solving skills through CS50 labs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h5 class="card title">CS50 Progress Tracker</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width: 70%">70% Complete</div>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Completed: 8 Problem Sets
+                                        <span class="badge bg-success float-end">✓</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Current: Homepage (PSET8)
+                                        <span class="badge bg-primary float-end">Active</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Final Project: Coming Soon!
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- Skills Preview -->
+          <section class="py-5 bg-light">
+              <div class="container my-5">
+                    <h2 class="text-center mb-4">Developing Skills</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                             <div class="card h-100 d-flex flex-column justify-content-between">
+                                <div class="card-body">
+                                    <h5 class="card-title">C Programming</h5>
+                                    <p class="card-text">Built low-level programs focusing on memory management and algorithms.</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 85%">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col">
+                            <div class="card h-100 d-flex flex-column justify-content-between">
+                                <div class="card-body">
+                                    <h5 class="card-title">Python</h5>
+                                    <p class="card-text">
+                                        Developed applications using OOP principles and popular libraries.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width: 70%">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class ="card h-100 d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Basics</h5>
+                                <p class="card-text">
+                                    Created responsive website with HTML/CSS and JavaScript.
+                                </p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" style="width: 65%">65%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class ="card h-100 d-flex flex-column justify-content-between">
+                            <div class="card-body">
+                                <h5 class="card-title">SQL Basics</h5>
+                                <p class="card-text">
+                                    Used sqlite3 commands to filter and organize databases.
+                                 </p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width: 60%">60%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+         <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p class="mb-0">
+                    © 2025 Altan Basoglu | CS50 Journey |
+                    <a href="mailto:altan_basoglu@hotmail.com" class="text-white">Contact Me</a>
+                </p>
+            </div>
+         </footer>
+         <!-- Dark Mode Script -->
+          <script>
+            document.getElementById('darkModeToggle').addEventListener('click', function(){
+                document.body.classList.toggle('dark-mode');
+                // Save user preference
+                localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+            });
+            // Check for saved preference
+            if (localStorage.getItem('darkMode') == 'true') {
+                document.body.classList.add('dark-mode');
+            }
+          </script>
+    </body>
+</html>
