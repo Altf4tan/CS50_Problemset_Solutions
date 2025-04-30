@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Quote{% endblock %}
+
+{% block main %}
+<form action="/quote" method="post">
+    <input name="symbol" class="form-control mx-auto w-auto mb-3" placeholder="Ticker" autocomplete="off" autofocus>
+    <button class="btn btn-primary" type="submit">Get Price</button>
+</form>
+{% endblock %}

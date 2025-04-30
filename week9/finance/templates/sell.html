@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Sell{% endblock %}
+{% block main %}
+    <form action="/sell" method="post">
+        <!-- Dropdown of symbols the user actually owns -->
+         <select name="symbol">
+            {% for row in symbols %}
+                <option value="{{ row.symbol }}">{{ row.symbol }}</option>
+            {% endfor %}
+            </select>
+            <!-- Number of shares to sell -->
+             <input name="shares" placeholder="Shares to sell">
+             <button type="submit">Sell</button>
+    </form>
+{% endblock %}

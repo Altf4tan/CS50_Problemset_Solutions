@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h2>{{ stock.name }} ({{ stock.symbol }}) </h2>
+    <p class="lead">{{ stock.price | usd }}</p>
+    <a href="/buy" class="btn btn-success">Buy This Stock</a>
+{% endblock %}
